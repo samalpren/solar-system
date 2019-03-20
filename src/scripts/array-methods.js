@@ -25,6 +25,14 @@ planets.forEach(planet => {
     https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase
 */
 
+// let capitalProject = planets.map(([planet]) => planet.toUpperCase());
+
+
+// const capitalProject = planets.map(planet =>
+// 		planet[0].toUpperCase() + planet.slice(1).toLowerCase()
+// );
+
+// console.log(capitalProject)
 
 /*
     Use the filter method to create a new array that
@@ -33,3 +41,15 @@ planets.forEach(planet => {
 
     https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes
 */
+
+const containsE = planets.filter(planet => {
+
+  let planetWithAnE = false;
+
+  if (planet.includes("e")){
+    planetWithAnE = true;
+  }
+  return planetWithAnE
+});
+
+console.log(containsE);
